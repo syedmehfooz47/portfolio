@@ -3,95 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syed Mehfooz C S | B.Tech CSE</title>
+    <title>Syed Mehfooz CS | Software Developer</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Syed Mehfooz C S</h1>
-            <p>B.Tech CSE | Full-Stack Developer | AI & Cloud Enthusiast</p>
-        </div>
 
-        <div class="coming-soon">
-            <h2>Portfolio Under Construction</h2>
-            <p>My new website is coming soon. Stay tuned!</p>
-        </div>
+    <div id="cursor-glow"></div>
+    <div class="background-aurora"></div>
 
-        <div class="content">
-            <div class="about">
-                <h3>About Me</h3>
-                <p>I am a passionate and results-oriented Computer Science and Engineering student at HKBK College of Engineering, with a strong foundation in full-stack development, cloud computing, and machine learning. I am driven by a desire to build innovative and impactful applications that solve real-world problems. I am a fast learner, a collaborative team player, and I am always eager to take on new challenges.</p>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Syed Mehfooz CS</a>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-            <div class="skills">
-                <h3>My Skillset</h3>
-                <ul>
-                    <li><strong>Languages I'm Learning:</strong> Python, JavaScript, HTML/CSS, Java</li>
-                    <li><strong>Familiar With:</strong>
-                        <ul>
-                            <li><strong>Frameworks & Libraries:</strong> Node.js, Express.js, Streamlit, Web3.js</li>
-                            <li><strong>Databases & Cloud:</strong> SQL, AWS, Google Cloud, Azure</li>
-                        </ul>
-                    </li>
-                    <li><strong>Developer Tools & Platforms:</strong> Git, GitHub, VS Code, PyCharm, Android Studio, Firebase</li>
-                    <li><strong>Operating Systems:</strong> Linux, Windows, macOS</li>
-                </ul>
+    <header id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-line">
+                <div class="hero-circle"></div>
+                <div class="hero-gradient-line"></div>
             </div>
+            <div>
+                <h1 class="reveal">Hi, I'm <span class="text-accent">Syed Mehfooz CS</span></h1>
+                <p class="hero-subtext reveal">A highly motivated Computer Science student with a foundation in software development and cloud computing.</p>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down-btn">
+            <div class="mouse">
+                <div class="scroller"></div>
+            </div>
+        </a>
+    </header>
 
-            <div class="projects">
-                <h3>Projects</h3>
-                <div class="project-grid">
+    <main>
+        <section id="about" class="section-container">
+            <div class="section-header reveal">
+                <p class="section-subtext">Introduction</p>
+                <h2 class="section-headtext">Overview.</h2>
+            </div>
+            <p class="section-paragraph reveal">
+                Seeking a challenging role to apply theoretical knowledge, contribute to innovative projects, and develop practical skills at a leading technology company. I am a quick learner with proven adaptability and a passion for building intelligent applications that solve real-world problems. Let's work together to bring your ideas to life!
+            </p>
+        </section>
+
+        <section id="projects" class="section-container">
+            <div class="section-header reveal">
+                <p class="section-subtext">My Work</p>
+                <h2 class="section-headtext">Projects.</h2>
+            </div>
+            <p class="section-paragraph reveal">
+                The following projects showcase my skills through real-world examples of my work. Each project is briefly described with a link to the code repository. They reflect my ability to solve complex problems and work with different technologies.
+            </p>
+             <div class="project-cards-container reveal">
+                <a href="https://github.com/syedmehfooz47" target="_blank" class="project-card-link">
                     <div class="project-card">
-                        <h4>Advanced AI Voice Assistant</h4>
-                        <p>A personalized AI assistant with voice interaction, real-time response, and task automation using Python. Features speech recognition, TTS, and control over applications like WhatsApp and system automation.</p>
-                    </div>
-                    <div class="project-card">
-                        <h4>ML-Powered Resume Shortlisting System</h4>
-                        <p>An intelligent tool built with Streamlit that parses resumes, extracts key skills, and categorizes candidates. Implements a scoring system and integrates with MySQL for data storage.</p>
-                    </div>
-                    <div class="project-card">
-                        <h4>NexusDrop - Cloud File Management System</h4>
-                        <p>A full-stack application for secure file uploads and downloads using Cloudinary. Features a responsive UI built with TailwindCSS.</p>
-                        <div class="project-links">
-                            <a href="https://superlative-entremet-3d67d2.netlify.app/#uploader" target="_blank">Live Demo</a>
-                            <a href="https://github.com/zeeshan8088/cloud-drive-firebase" target="_blank">GitHub</a>
+                        <h3>Advanced AI Voice Assistant</h3>
+                        <p>Architected a multilingual AI assistant in Python, leveraging NLP and LLMs via APIs for complex task automation.</p>
+                        <div class="project-tags">
+                            <span>#Python</span>
+                            <span>#NLP</span>
+                            <span>#LLM APIs</span>
                         </div>
                     </div>
+                </a>
+                <a href="https://github.com/syedmehfooz47" target="_blank" class="project-card-link">
                     <div class="project-card">
-                        <h4>Blockchain Voting System</h4>
-                        <p>A decentralized application ensuring vote integrity and transparency using Blockchain technology. Built with JavaScript, Web3.js, and Ethereum.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/syedmehfooz47/Blockchain-Voting-System" target="_blank">GitHub</a>
+                        <h3>ML-Powered Resume Shortlisting</h3>
+                        <p>Engineered a Streamlit tool to parse resumes using OCR and score candidates with keyword-based ML logic.</p>
+                        <div class="project-tags">
+                            <span>#Streamlit</span>
+                            <span>#MachineLearning</span>
+                            <span>#OCR</span>
                         </div>
                     </div>
-                     <div class="project-card">
-                        <h4>Chatbot Application</h4>
-                        <p>A native Android application with a real-time, AI-driven conversational interface. Integrates a cloud-based LLM via RESTful APIs.</p>
+                </a>
+                <a href="https://github.com/syedmehfooz47" target="_blank" class="project-card-link">
+                    <div class="project-card">
+                        <h3>Chatbot Application</h3>
+                        <p>Developed a native Android chatbot in Java, integrating a cloud-based LLM via a secure RESTful API.</p>
+                        <div class="project-tags">
+                            <span>#Java</span>
+                            <span>#Android</span>
+                            <span>#REST API</span>
+                        </div>
                     </div>
+                </a>
+                <a href="https://github.com/syedmehfooz47" target="_blank" class="project-card-link">
+                    <div class="project-card">
+                        <h3>DropHaven Cloud File Upload</h3>
+                        <p>Architected a full-stack application with a Node.js back-end and a responsive UI using HTML5 and TailwindCSS.</p>
+                        <div class="project-tags">
+                            <span>#Node.js</span>
+                            <span>#HTML5</span>
+                            <span>#Full-Stack</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/syedmehfooz47" target="_blank" class="project-card-link">
+                    <div class="project-card">
+                        <h3>Blockchain Voting System</h3>
+                        <p>Developed a decentralized voting application on the Ethereum blockchain using Solidity and Web3.js.</p>
+                        <div class="project-tags">
+                            <span>#Blockchain</span>
+                            <span>#Solidity</span>
+                            <span>#Web3.js</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="skills" class="section-container">
+            <div class="section-header reveal">
+                <p class="section-subtext">My Abilities</p>
+                <h2 class="section-headtext">Technical Skills.</h2>
+            </div>
+            <div class="skills-grid reveal">
+                <div class="skill-category"><h3>Programming Languages</h3><ul><li>Python</li><li>JavaScript</li><li>HTML/CSS</li></ul></div>
+                <div class="skill-category"><h3>Developer Tools & Platforms</h3><ul><li>Git & GitHub</li><li>VS Code & PyCharm</li><li>Android Studio</li><li>Firebase</li></ul></div>
+                <div class="skill-category"><h3>Cloud Platforms (Familiar)</h3><ul><li>AWS</li><li>Google Cloud</li><li>Azure</li></ul></div>
+                <div class="skill-category"><h3>Operating Systems</h3><ul><li>Linux</li><li>Windows</li><li>macOS</li></ul></div>
+            </div>
+        </section>
+
+        <section id="education" class="section-container">
+            <div class="section-header reveal"><p class="section-subtext">My Journey</p><h2 class="section-headtext">Education.</h2></div>
+            <div class="timeline reveal">
+                <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h3>B.E. in Computer Science & Engineering</h3><p class="timeline-sub">HKBK College Of Engineering, Bengaluru (Expected: 2026)</p><p>CGPA: 6.73</p></div></div>
+                <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h3>Pre-University Course (PUC)</h3><p class="timeline-sub">Presidency College, Bengaluru (2022)</p><p>Score: 58.5%</p></div></div>
+                <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h3>Secondary School Leaving Certificate</h3><p class="timeline-sub">RT Nagar Educational Trust High School, Bengaluru (2020)</p><p>Score: 73.76%</p></div></div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-container">
+            <div class="section-header reveal"><p class="section-subtext">Get in touch</p><h2 class="section-headtext">Contact.</h2></div>
+            <div class="contact-form-container reveal">
+                <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="contact-form">
+                    <label><span>Your Name</span><input type="text" name="name" placeholder="What's your name?" required></label>
+                    <label><span>Your Email</span><input type="email" name="email" placeholder="What's your email?" required></label>
+                    <label><span>Your Message</span><textarea name="message" rows="7" placeholder="What do you want to say?" required></textarea></label>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3 class="footer-name">Syed Mehfooz CS</h3>
+                <p class="footer-tagline">A student developer passionate about building intelligent applications and contributing to innovative projects.</p>
+            </div>
+            <div class="footer-socials">
+                <h3 class="footer-heading">Connect with me</h3>
+                <div class="social-icons">
+                    <a href="https://github.com/syedmehfooz47" target="_blank" title="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="social-svg">
+                            <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3.3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 35.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-27.9-112.3-124.3 0-27.5 10.1-49.9 26.4-67.5-2.6-6.2-11.5-32.2 2.6-66.2 0 0 21.2-6.8 69.7 26.3 20.1-5.6 41.6-8.3 62.2-8.3 20.6 0 42.1 2.8 62.2 8.3 48.6-33.1 69.7-26.3 69.7-26.3 14.2 34 5.2 60 2.6 66.2 16.3 17.6 26.4 40 26.4 67.5 0 96.6-56.4 118.1-112.6 124.1 9.1 7.9 17.2 23.5 17.2 47.4 0 34.3-.3 61.5-.3 70 0 6.5 4.6 14.4 17.4 12.1C428.2 457.8 496 362.9 496 252 496 113.3 389.9 8 244.8 8z"/>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/in/syedmehfooz47" target="_blank" title="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="social-svg">
+                            <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 53.79-54.3c29.7 0 53.79 24.7 53.79 54.3a53.79 53.79 0 0 1-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94.08 0 111.28 61.9 111.28 142.3V448z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:syedmehfoozcs@gmail.com" title="Email">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="social-svg">
+                            <path d="M48 64C21.5 64 0 85.5 0 112v288c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm0 32h416c8.8 0 16 7.2 16 16v32L256 293.4 48 144v-48c0-8.8 7.2-16 16-16zm0 320V192l192 144L464 192v224c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16z"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
-
-            <div class="education">
-                <h3>Education</h3>
-                <p><strong>B.E. in Computer Science & Engineering</strong></p>
-                <p>HKBK College Of Engineering, Visvesvaraya Technological University</p>
-                <p>Expected Graduation: 2026</p>
-                <p>CGPA: 6.73</p>
-            </div>
         </div>
-
-        <div class="footer">
-            <div class="social-links">
-                <a href="mailto:syedmehfoozcs@gmail.com"><i class="fas fa-envelope"></i></a>
-                <a href="https://github.com/syedmehfooz47" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/syedmehfooz47/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            </div>
-            <p>&copy; 2025 Syed Mehfooz C S. All Rights Reserved.</p>
+        <div class="footer-copyright">
+            <p>&copy; 2024 Syed Mehfooz CS. All Rights Reserved.</p>
         </div>
-    </div>
-
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
