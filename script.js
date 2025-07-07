@@ -5,16 +5,29 @@ document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-link');
     const navbar = document.querySelector('.navbar');
     const sections = document.querySelectorAll('section[id]');
+    const cursorGlow = document.getElementById('cursor-glow');
 
+    // --- Interactive Cursor Glow ---
+    document.addEventListener('mousemove', (e) => {
+        cursorGlow.style.left = e.clientX + 'px';
+        cursorGlow.style.top = e.clientY + 'px';
+        cursorGlow.style.opacity = '1';
+    });
+
+    document.addEventListener('mouseleave', () => {
+        cursorGlow.style.opacity = '0';
+    });
+
+    // --- Mobile Menu Toggle ---
     const toggleMenu = () => {
         const isActive = menu.classList.toggle('is-active');
         menuLinks.classList.toggle('active');
-        // Prevent body scroll when menu is open
         document.body.style.overflow = isActive ? 'hidden' : 'auto';
     };
 
     menu.addEventListener('click', toggleMenu);
 
+    // --- Close mobile menu on link click ---
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             if (menu.classList.contains('is-active')) {
@@ -23,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // --- Navbar Scroll Effect ---
     const handleScroll = () => {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
@@ -30,15 +44,17 @@ document.addEventListener('DOMContentLoaded', function() {
             navbar.classList.remove('scrolled');
         }
     };
-    
+
     window.addEventListener('scroll', handleScroll, { passive: true });
 
+    // --- On-Scroll Reveal Animation (REPEATING) ---
     const revealElements = document.querySelectorAll('.reveal');
     const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-            } else {
+            }
+            else {
                 entry.target.classList.remove('visible');
             }
         });
@@ -50,6 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
         revealObserver.observe(element);
     });
 
+    // --- Active Nav Link Highlighting on Scroll ---
     const navHighlighter = () => {
         let scrollY = window.pageYOffset;
         let activeSectionId = null;
@@ -57,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
         sections.forEach(current => {
             const sectionHeight = current.offsetHeight;
             const sectionTop = current.offsetTop - 150;
-            
+
             if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
                 activeSectionId = current.getAttribute('id');
             }
@@ -70,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     };
-    
+
     window.addEventListener('scroll', navHighlighter, { passive: true });
 
 });
